@@ -10,6 +10,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 
 body{
@@ -33,16 +34,19 @@ header{
 nav{
     padding: 10px 20px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul{
     display: flex;
-    justify-content: right;
     gap: 30px;
     list-style: none;
+    align-items: center;
 }
 
 nav ul li a{
+    display: flex;
     color: var(--color-texto);
     text-decoration: none;
     font-weight: 500;
