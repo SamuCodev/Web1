@@ -1,7 +1,8 @@
 :root{
     --color-principal: hsl(240, 100%, 10%);
-    --color-texto: hsl(0,100%, 100%); 
+    --color-texto-claro: hsl(0,100%, 100%); 
     --color-fondo-suave: hsl(0, 0%, 90%);
+    --color-texto: hsl(0, 0%, 0%);
     --color-acento: hsl(240, 100%, 60%);
     --transicion: all 0.3s ease;
 }
@@ -20,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     min-width: 100vh;
-    color: var(--color-texto);
+    color: var(--color-texto-claro);
 }
 
 header{
@@ -47,7 +48,7 @@ nav ul{
 
 nav ul li a{
     display: flex;
-    color: var(--color-texto);
+    color: var(--color-texto-claro);
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -57,4 +58,8 @@ nav ul li a{
 
 nav ul li a:hover{
     color: var(--color-acento);
+}
+
+h1{
+    color: var(--color-texto);
 }
