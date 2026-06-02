@@ -24,7 +24,6 @@ body{
     min-width: 100vh;
     min-height: 100vh;
     color: var(--color-texto);
-    max-width: 8px;
 }
 
 /*HEADER*/
