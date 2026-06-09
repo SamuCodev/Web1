@@ -39,7 +39,6 @@ nav{
     padding: 10px 20px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,10 +67,11 @@ nav ul li a:hover{
     color: var(--color-acento);
 }
 
-/*Seccion HERO*/
+/*SECTION HERO*/
 
 main{
     flex: 1;
+
 }
 
 .hero{
@@ -127,7 +127,6 @@ main{
 .info{
     background-color: var(--color-principal);
     padding: 80px 20px;
-    margin: 0 auto;
     text-align: center;
     color: var(--color-texto-claro);
 }
@@ -144,3 +143,65 @@ footer{
     padding: 20px;
 }
 
+/*SOBRE MI SITE*/
+
+.about-container{
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    animation: FadeIn 0.8s ease-out;
+}
+
+.about-header{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.profile-image img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border: 8px solid hsl(0, 0%, 90%);
+}
+
+.profile-text{
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-text h1{
+    font-size: 3rem;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+}
+
+.about-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.detail-card{
+    background-color: var(--color-fondo-suave);
+    padding: 40px;
+    border: 1px solid var(--color-principal);
+    border-radius: 20px;
+    transition: var(--transicion);
+    border-bottom: 5px solid var(--color-principal);
+}
+
+.detail-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.detail-card h2{
+    font-size: 2rem;
+}
